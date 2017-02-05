@@ -1,3 +1,13 @@
+<?php
+$name = 'Alex';
+$birthyear = '1994';
+$currentyear = '2017';
+$age = $currentyear - $birthyear;
+$email_address = 'dreamston18@gmail.com';
+$city = 'Химки';
+$about_me = 'Я студент)';
+ ?>
+
 <!DOCTYPE html>
 <html lang="ru">
     <head>
@@ -10,10 +20,11 @@
         </style>
     </head>
     <body>
-    <h1>Имя - Александр.</h1>
-    <h2>Возраст - 22 года.</h2>
-    <h3>email - <a href="dreamston18@gmail.com">dreamston18@gmail.com</a></h3>
-    <h4>Город - Самара</h4>
-    <h5>О себе - будущий PHP разработчик</h5>
+    <h1>Обо мне...</h1>
+    <p>Имя - <?php echo "$name"; ?> </p>
+    <p>Возраст - <?php echo "$age"; ?> </p>
+    <p>email - <a href="dreamston18@gmail.com"> <?php echo "$email_address"; ?></a> </p>
+    <p>Город - <?php echo "$city"; ?></p>
+    <p>О себе - <?php echo "$about_me"; ?></p>
     </body>
 </html>
